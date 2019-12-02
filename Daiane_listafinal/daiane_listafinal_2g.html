@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script language = javascript>
+            /* Faça um programa que pergunte o preço de trê produtos e informe qual produto você deve comprar, sabendo que a decisão é sempre pelo mais barato. */
+
+           
+
+            preco1=parseFloat(prompt("Digite o preço do primeiro produto: "))
+            preco2=parseFloat(prompt("Digite o preço do segundo produto: "))
+            preco3=parseFloat(prompt("Digite o preço do terceiro produto: "))
+        
+        
+    
+
+        if (preco1<preco2)
+        {
+            if (preco1<preco3)
+            menor="primeiro produto"
+        }
+
+        if (preco2<preco1)
+        {
+            if (preco2<preco3)
+            menor="segundo produto"
+        }
+
+        if (preco3<preco1)
+        {
+            if (preco3<preco2)
+            menor="terceiro produto"
+        }
+
+      
+        document.write(" O " + menor + " é o mais barato!")
+
+
+        </script>
+
+    <body></body>
+    </head>
+</html>

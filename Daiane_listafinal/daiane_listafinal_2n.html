@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script language = javascript>
+
+            /* Faça um Programa que faça 5 perguntas para uma pessoa sobre um crime.
+            As perguntas são:
+            a. Telefonou para a vítima?
+            b. Esteve no  local do crime?
+            c. Mora perto da vítima?
+            d. Devia para a vítima?
+            e. Já trabalhou com a vitíma?
+            O programa deve no final emitir uma classificação sobre a participação da pessoa no crime.
+             Se a pessoa responder positivamente a 2 questões ela deve ser classificada como " Suspeita", 
+             entre 3 e 4 como "Cúmplice" e 5 como "Assassino". Caso contrário, ele será classificado como "Inocente". */
+
+            perguntaa=prompt(" Você telefonou para a vitíma? Digite 1 para SIM e 2 para NÃO")
+            perguntab=prompt(" Você esteve no local do crime? Digite 1 para SIM e 2 para NÃO")
+            perguntac=prompt(" Você mora perto da vitíma? Digite 1 para SIM e 2 para NÃO")
+            perguntad=prompt(" Você devia para a vitíma? Digite 1 para SIM e 2 para NÃO")
+            perguntae=prompt(" Você já trabalhou com a vitíma? Digite 1 para SIM e 2 para NÃO")
+
+            if(perguntaa=="1")
+            {
+                soma=1
+
+                if(perguntab=="1")
+                {
+                    soma=soma+1
+
+                    if(perguntac=="1")
+                    {
+                        soma=soma+1
+                        
+                        if(perguntad=="1")
+                        {
+                            soma=soma+1
+
+                            if(perguntae=="1")
+                            {
+                                soma=soma+1
+                            }
+                        }
+                    }
+                }
+            }
+
+            if(soma==2)
+            {
+                classificacao= "SUSPEITA(O)"
+            }
+
+            else if(soma==3 || soma==4)
+            {
+                classificacao= "CÚMPLICE"
+            }
+
+            else if(soma==5)
+            {
+                classificacao= "ASSASSINA(O)"
+            }
+
+            else if (soma!=5 && soma!=3 && soma!=4 && soma!=5)
+            {
+                classificacao= "INOCENTE"
+            }
+
+            document.write(classificacao)
+
+        </script>
+    </head>
+</html>

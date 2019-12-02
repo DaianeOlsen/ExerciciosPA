@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script language = javascript>
+
+            /* Faça um Programa que, dado um conjunto de N números, determine o menor valor, o maior valor e a soma dos valores. 
+            O programa deve finalizar quando o valor lido for 0 (zero) */
+    
+        
+        soma=0
+        maior=menor
+        while(true)
+        {   
+            numero=parseInt(prompt("Digite um número:"))
+            if (numero==0)
+                break
+            if (menor < numero)
+                menor = numero
+            if (maior > numero)
+                maior = numero
+            soma = soma + numero
+        }
+        document.write("Menor: " + menor + "<br/>" +"Maior: " + maior + "<br/>"+" Soma = " + soma)
+    </script>
+    </head>
+</html>

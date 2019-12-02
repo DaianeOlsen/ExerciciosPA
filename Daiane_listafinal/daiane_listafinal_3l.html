@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script language = javascript>
+
+            /* Faça um Programa que peça um número inteiro e determine se ele é ou não um número primo. Um número primo é aquele  que é divisível somente por ele mesmo 
+            e por 1. Caso o número não seja primo, informar por quais números ele é divisível. */
+    
+        
+        numero=parseInt(prompt(" Por favor digite um número para saber se o mesmo é primo: "));
+        num=0
+        i = 1
+        while (i<=numero)
+        {
+            resto=numero%i
+            if (resto==0)
+                num++
+            i++
+        }
+
+
+        if (num==2)
+            document.write(numero + " é um número primo!")
+
+
+        else
+        {
+            document.write(numero + " não é um número primo, pois é divisível por: " )
+            i=1
+            while (i<=numero)
+            {
+                a=numero%i
+                if(a==0)
+                {
+                    document.write(i + "  ")
+                }
+                i++;
+            }
+        }
+    </script>
+</body>
+</html>

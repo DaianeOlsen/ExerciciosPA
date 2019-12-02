@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script language = javascript>
+
+            /* O departamento Estadual de Meteorologia lhe contratou para desenvolver um programa que leia a um conjunto indeterminado de temperaturas, e 
+            informe ao final a menor e maior temperatura, bem como a média das temperaturas. O programa deve parar de ler as temperaturas quando for digitado -99.*/
+
+
+            maior=true
+            menor=maior
+            soma=0
+            i=0
+            while (true)
+            {   
+                t = parseInt(prompt(" Digite a temperatura: "))
+                if (t==-99)
+                    break
+                soma=soma + t
+                if (menor>t)
+                    menor=t
+                if (maior<t)
+                    maior=t
+                i++
+            }
+
+            media=soma/i
+            document.write("A maior temperatura registrada foi: " + maior + "<br/>" + "A menor temperatura registrada foi: " + menor + "<br/>" + "Média das temperaturas registradas: " + media.toFixed(2) + "ºC")
+    </script>
+</body>
+</html>

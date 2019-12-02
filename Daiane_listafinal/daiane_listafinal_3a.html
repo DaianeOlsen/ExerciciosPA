@@ -1,0 +1,20 @@
+<html>
+    <head>
+         <meta charset="UTF-8">
+         <script language=javascript>
+             /* Faça um programa que peça uma nota, entre zero e dez. Mostre uma mensagem caso o valor seja inválido
+              e continue pedindo até que o usuário inform um valor válido. */
+
+            nota=parseFloat(prompt("Por favor, digite uma nota: "))
+
+            while (nota<0 || nota>11)
+            {
+                alert("Nota Inválida!")
+                nota=parseFloat(prompt("Digite uma nota:"))
+            }
+
+            document.write("Essa nota é válida!")
+    </script>
+    <body></body>
+    </head>
+</html>

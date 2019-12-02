@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script language = javascript>
+            /* Faça um programa que leia três número e mostre o maior deles. */
+
+            valor1=parseFloat(prompt("Digite um valor: "))
+            valor2=parseFloat(prompt("Digite outro valor diferente: "))
+            valor3=parseFloat(prompt("Digite outro valor diferente dos anteriores: "))
+        
+        if (valor1>valor2)
+        {
+            if (valor1>valor3)
+            maior=valor1
+        }
+
+        if (valor2>valor1)
+        {
+            if (valor2>valor3)
+            maior=valor2
+        }
+
+        if (valor3>valor1)
+        {
+            if (valor3>valor2)
+            maior=valor3
+        }
+        
+
+
+        if (valor1<valor2)
+        {
+            if (valor1<valor3)
+            menor=valor1
+        }
+
+        if (valor2<valor1)
+        {
+            if (valor2<valor3)
+            menor=valor2
+        }
+
+        if (valor3<valor1)
+        {
+            if (valor3<valor2)
+            menor=valor3
+        }
+
+        document.write (maior +" é o maior valor. "+ "<br/>")
+        document.write(menor + " é o menor valor. ")
+
+
+        </script>
+
+    <body></body>
+    </head>
+</html>

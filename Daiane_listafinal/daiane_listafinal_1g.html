@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script language = javascript>
+            /* Faça um Programa que pergunte quanto você ganha por hora e o número de horas trabalhadas no mês.
+            Calcule e mostre o total do seu salário no referido mês, sabendo-se que são descontas 11% para o 
+            Imposto de Renda, 8% para o INSS E 5% para o sindicato, faça um programa que nos informe o salário bruto,
+            quanto pagou ao INSS, quanto pagou ao sindicato, o salário líquido. Para calcular os descontos e o salário líquido,
+            use a tabela abaixo:
+            + salario bruto: R$
+            - IR (11%): R$
+            - INSS (8%): R$
+            - sindicato (5%): R$
+            = salário liquido: R$
+            obs. salário bruto - descontos = salário líquido */
+
+            
+            valorhora= parseFloat(prompt(" Quanto você ganha por hora? "))
+            horatrabalhada= parseFloat(prompt(" Quantas horas foram trabalhadas no mês? "))
+
+            salariobruto= valorhora*horatrabalhada
+            
+            ir=11
+            inss=8
+            sindicato=5
+
+            descontoir= (ir*salariobruto)/100
+            descontoinss= (inss*salariobruto)/100
+            descontosindicato= (sindicato*salariobruto)/100
+            descontototal= (descontoir)+(descontoinss)+(descontosindicato)
+
+            salarioliquido=salariobruto-descontototal
+
+            document.write (" Segue as informações do salário do mês " +"<br/>")
+            document.write ("<br/>")
+            document.write (" + Salário Bruto: R$ " + salariobruto + "<br/>")
+            document.write ("<br/>")
+            document.write (" Descontos: " + "<br/>")
+            document.write (" - IR (11%) "+ descontoir + "<br/>")
+            document.write (" - INSS (8%) " + descontoinss +"<br/>")
+            document.write (" - Sindicato (5%) " +descontosindicato + "<br/>")
+            document.write ("<br/>")
+            document.write ("  = TOTAL dos descontos: " + descontototal + "<br/>")
+            document.write ("<br/>")
+            document.write ("<br/>")
+            document.write (" = Salário Líquido: R$ " + salarioliquido)
+            
+            
+
+            
+          
+           
+        </script>
+
+    <body></body>
+    </head>
+</html>

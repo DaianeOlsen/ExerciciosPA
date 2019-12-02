@@ -1,0 +1,32 @@
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <script language=javascript>
+  
+        /* Faça um Programa que pum número correspondente a um determinado ano e em seguida informe se este ano é ou não bissexto. */
+            
+        ano=parseInt(prompt(" Digite um ano: "))
+        div4=ano%4==0
+        div100=ano%400==0
+        div400=ano%400==0
+        
+
+        if(ano%4==0  || ano%400==0)
+        {  
+           if(ano%400!=0)
+           {
+            respostaano="Este ano é bissexto!"
+           }
+        }
+
+
+        else
+        {
+            respostaano="Este ano não é bissexto!"
+        }
+       
+       document.write(respostaano) 
+    </script>
+    <body></body>
+    </head>
+</html>

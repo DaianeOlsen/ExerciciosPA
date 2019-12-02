@@ -1,0 +1,35 @@
+<html>
+     <head>
+         <meta charset="UTF-8">
+         <script language = javascript>
+        
+         /* Desenvolva um programa que faça a tabuada de um número qualquer inteiro que será digitado pelo usuário, mas a taabuada não deve necessariamente iniciar em 1
+         e terminar em 10, o valor inicial e final devem ser informados também pelo usuário, conforme o exemplo abaixo:
+         • Monstar a tabuada de: 5 ( pedir esse informação para o usuário
+         • Começar por: 4 (pedir essa informação para usuário
+         • Terminar em: 7 (pedir essa informação para usuário)
+         •
+         •
+         • Vou montar a tabuada de 5 começando em 4 e terminando em 7:
+         • 5 x 4 = 20
+         • 5 x 5 = 25
+         • 5 x 6 = 30
+         • 5 x 7 = 35 */
+        
+            num=parseInt(prompt(" Digite o número referente a tabuada que deseja saber: "))
+            contador=parseInt(prompt(" A partir de qual número deseja ver os resultados? "))
+            resultadofinal=parseInt(prompt(" Qual o último resultado deseja ser exibido? "))
+
+            document.write("Tabuada do " + num + "<br/>")
+
+            while(contador<=resultadofinal)
+                {
+                    tabuada=contador*num
+                    document.write(num + " x " + contador + " = " + tabuada + "<br/>")
+                    contador++
+                }
+
+    </script>
+    <body></body>
+    </head>
+</html>

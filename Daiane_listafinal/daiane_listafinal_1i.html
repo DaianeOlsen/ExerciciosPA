@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script language = javascript>
+            /* Faça um programa que peça o tamanho de um arquivo para dowload (em MB) e a velocidade de um link de internet (em Mbps),
+            calcule e informe o tempo aproximado de dowload do arquico usando este link (em munutos). */
+            
+            download= parseFloat(prompt(" Qual o tamanho do arquivo para o download (em MB) ? "))
+            velocidade= parseFloat(prompt(" Qual a velocidade do link (em Mbps) ? "))
+
+            segundos=download/(velocidade/8)
+            
+
+            document.write( " O tempo aproximado para o download é de: " + segundos + " segundos . ")
+          
+           
+        </script>
+
+    <body></body>
+    </head>
+</html>

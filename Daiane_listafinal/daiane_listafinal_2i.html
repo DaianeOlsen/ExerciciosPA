@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script language = javascript>
+
+            /* As Organizações Tabajara resolveram dar um aumento de salário aos seus colaboradoess e lhe contrataram para desenvolver o programa que 
+            calculará os reajustees.
+            - Faça um programa que recebe o salário de um colaborador e o reajuste segundo o seguinte critério, baseado no salário atual:
+            • salários até R$280.00: aumento de 20%
+            • salários entre R$280.01 e R$700.00: aumento de 15% 
+            • salários entre R$700.01 e R$1500.00: aumento de 10% 
+            • salários de R$1500.01 em diante: aumento de 5% 
+            - Após o aumento ser realizado, informe na tela:
+            • o slário antes do reajuste;
+            • o percentual de aumento aplicado;
+            • o valor do aumento;
+            • o novo salário, após o aumento. */
+
+        salario=parseFloat(prompt(" Por favor informe seu salário: "))
+
+        if(salario<=280.00)
+        {  
+            ajuste="20%"
+            aumentosalario=(salario*20)/100
+            novosalario=salario+aumentosalario
+        }
+
+
+        else if(salario<=700.00)
+        {
+            ajuste="15%"
+            aumentosalario=(salario*15)/100
+            novosalario=salario+aumentosalario
+        }
+
+
+        else if(salario<=1500.00)
+        {
+            ajuste="10%"
+            aumentosalario=(salario*10)/100
+            novosalario=salario+aumentosalario
+        }
+
+
+        else if(salario>=1500.01)
+        {
+            ajuste="5%"
+            aumentosalario=(salario*5)/100
+            novosalario=salario+aumentosalario
+        }
+       
+       document.write("Seu salario atual é de: R$ " + salario + "<br/>")
+       document.write(" O percentual de aumento para seu salario é de:  " + ajuste + "<br/>")
+       document.write(" O valor do seu aumento é de: R$ " + aumentosalario + "<br/>")
+       document.write(" O seu novo salario é de: R$ " + novosalario+ "<br/>")
+    </script>
+    <body></body>
+    </head>
+</html>

@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script language = javascript>
+
+            /* Faça um programa que mostre todos os primos entre 1 e N sendo N um número inteiro fornecido pelo usuário. */
+      
+            n = parseInt(prompt("Por favor, digite um número: "));
+
+
+            for (i=1; i<=n; i++)
+            {
+                primo=i
+                x=1
+                num=0
+                while (x<=primo){
+                    resto = primo%x;
+                    if (resto==0){
+                        num++
+                    }
+                    x++
+                }
+                if (num==2){
+                    document.write(primo + " <br> ")
+                }
+            }
+            
+    </script>
+</body>
+</html>
